@@ -523,14 +523,16 @@
         <div class="wrap-form">
           <p class="footer-title">Subscribe</p>
           <form class="form-footer">
-            <input
-              class="email-subscribe"
-              type="email"
-              name="email-subscribe"
-              placeholder="E-mail"
-            />
+            <label class="label-foot">
+              <input
+                class="email-subscribe"
+                type="email"
+                name="email-subscribe"
+                placeholder="E-mail"
+              />
+            </label>
             <button class="btn-subscr" type="submit">
-              Subscribe<svg class="footer-svg" width="24" height="20">
+              Subscribe<svg class="footer-svg" width="24" height="24">
                 <use href="./images/symbol-defs (1).svg#icon-icon-send"></use>
               </svg>
             </button>
@@ -564,7 +566,7 @@
           </div>
 
           <div class="input-wrap">
-            <label class="lable-name" for="user-phone">Phone</label>
+            <label class="label-name" for="user-phone">Phone</label>
             <div class="wrap-field">
               <input
                 id="user-phone"
@@ -580,7 +582,7 @@
           </div>
 
           <div class="input-wrap">
-            <label class="lable-name" for="user-email">Email</label>
+            <label class="label-name" for="user-email">Email</label>
             <div class="wrap-field">
               <input
                 id="user-email"
@@ -595,7 +597,7 @@
             </div>
           </div>
           <div class="input-wrap texteria">
-            <label class="lable-name" for="user-comment"> Comment</label>
+            <label class="label-name" for="user-comment"> Comment</label>
             <textarea
               id="user-comment"
               name="user-comment"
@@ -605,24 +607,22 @@
             ></textarea>
           </div>
           <div class="wrap-checkbox">
-            <div class="input-chackbox">
-              <input
-                id="user-privacy"
-                class="checkbox visually-hidden"
-                type="checkbox"
-                name="user-privacy"
-                value="true"
-              />
-              <label for="user-privacy" class="lable-check-policy">
-                <span class="span-pp"
-                  ><svg class="icon-checkbox" width="10" height="8">
-                    <use href="./images/icons.svg#icon-checkbox"></use>
-                  </svg>
-                </span>
-                I accept the terms and conditions of the
-                <a href="#" class="agreement">Privacy Policy</a>
-              </label>
-            </div>
+            <input
+              id="user-privacy"
+              class="checkbox visually-hidden"
+              type="checkbox"
+              name="user-privacy"
+              value="true"
+            />
+            <label for="user-privacy" class="label-check-policy">
+              <span class="span-pp"
+                ><svg class="icon-checkbox" width="10" height="8">
+                  <use href="./images/icons.svg#icon-checkbox"></use>
+                </svg>
+              </span>
+              I accept the terms and conditions of the
+              <a href="#" class="agreement">Privacy Policy</a>
+            </label>
           </div>
           <button class="send-form-btn" type="submit">Send</button>
         </form>

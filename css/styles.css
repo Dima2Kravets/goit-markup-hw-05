@@ -440,7 +440,7 @@ textarea {
     margin-bottom: 16px;
    }
 
-   .footer-text{
+.footer-text{
     font-weight: 400;
     font-size: 16px;
     line-height: 1.5;
@@ -492,6 +492,7 @@ textarea {
 }
 .footer-svg{
     fill: #fff;
+    margin-left: 16px;
 }
 .footer-title{
     font-weight: 500;
@@ -533,7 +534,7 @@ textarea {
     justify-content: center;
     align-items: center;
     border-radius: 4px;
-    width: 165px;
+    min-width: 165px;
     height: 40px;
     background: #4d5ae5;
     font-weight: 500;
@@ -542,6 +543,7 @@ textarea {
     letter-spacing: 0.04em;
     color: #fff;
     border: none;
+    cursor: pointer
     }
 
                 /*Modal form*/
@@ -556,6 +558,7 @@ textarea {
     background: #fcfcfc;
     box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 2px 1px rgba(0, 0, 0, 0.2);
     padding: 72px 24px 24px 24px;
+    transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .modal-form {
     display: flex;
@@ -663,7 +666,7 @@ margin-bottom: 16px;
 .wrap-checkbox{
     margin-bottom: 24px;
 }
-.lable-check-policy {
+.label-check-policy {
     cursor: pointer;
     font-weight: 400;
     font-size: 12px;
@@ -673,19 +676,19 @@ margin-bottom: 16px;
 }
 .span-pp{
     border-radius: 2px;
-        border: 1px solid rgba(46, 47, 66, 0.4);
-        width: 16px;
-        height: 16px;
-        display: inline-flex;
-        justify-content: center;
-        align-items: center;
-        margin-right: 8px;
-        background-color: #fff;
-        fill: transparent;
-        transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1), border 250ms cubic-bezier(0.4, 0, 0.2, 1), fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    border: 1px solid rgba(46, 47, 66, 0.4);
+    width: 16px;
+    height: 16px;
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    margin-right: 8px;
+    background-color: #fff;
+    fill: transparent;
+    transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1), border 250ms cubic-bezier(0.4, 0, 0.2, 1), fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.checkbox:checked+.lable-check-policy .span-pp{
+.checkbox:checked+.label-check-policy .span-pp{
     border: none;
     background-color: #404BBF;
     fill: #f4f4fd;
@@ -696,7 +699,7 @@ margin-bottom: 16px;
 }
 .send-form-btn {
     display: block;
-    width: 169px;
+    min-width: 169px;
     height: 56px;
     font-family: "Roboto", sans-serif;
     font-size: 16px;
@@ -720,6 +723,8 @@ label {
     line-height: 1.17;
     letter-spacing: 0.04em;
     color: #8e8f99;
+    margin-bottom: 4px;
+    display: block;
 }
 
 
